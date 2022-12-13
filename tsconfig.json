@@ -1,0 +1,32 @@
+{
+  "Education": [{"Degree":
+    {
+        "school": "Massasoit",
+        "program_major": "Liberal-Arts Science",
+        "type": "AA",
+        "year_conferred":2015
+
+    }
+  },{"Degree":
+
+    {
+
+        "school": "Bridgewater State University",
+        "program_major": "Economics",
+        "type": "BS",
+        "year_conferred": 2018
+
+    }},{"Degree":
+
+
+    {
+
+        "school": "Boston University Metropolitan College",
+        "program_major": "Software Development",
+        "type": "MS",
+        "year_conferred": 2023
+
+    }}
+
+  ]
+}
