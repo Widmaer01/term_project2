@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3-D Art</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+<div id="wrapper">
+  <nav class="ham">
+    <label for="toggle"> &#9776;</label>
+    <input type="checkbox" id="toggle"/>
+    <ul class="nav-links">
+      <li class="links"><a class="alinks" href="index.html">Home</a></li>
+      <li class="links"><a class="alinks"  href="Photography.html">Photography</a></li>
+      <li class="links"><a class="alinks"  href="Music.html">Music</a></li>
+      <li class="links"><a class="alinks"  href="3-D_Art.html">3-D ART</a></li>
+      <li class="links"><a class="alinks"  href="New%20Skills.html">New Skills</a></li>
+
+    </ul>
+  </nav>
+
+
+<main>
+
+  <article>
+      <h1>3-D ART</h1>
+    <p> Recently I started learning 3D art not for any particular reason other than I thought It would be cool. I started with YouTube tutorials,
+      the first thing I built was a doughnut then after that I made a gem with a structure to hold it.
+      I should mention that the structure that the blue gem is hovering over was from a free package I got online.
+      Unlike other art forms 3D arts can download components of a scene like a chair or a table rather than making everything by hand.
+      I have worked in these 3D software environments
+    </p>
+    <ul>
+      <li>Blender </li>
+      <li>Maya</li>
+      <li>Cinema 4D</li>
+    </ul>
+
+
+
+
+
+  </article>
+  <h1>Hover Over the Bottom two objects for a cool affect</h1>
+
+  <div class="center_img">  <img src="img/gem.png" alt="selfie"   >
+
+  </div>
+  <div id="app"  >
+
+
+
+
+    <div class="center_img"><img :src="Img" @mouseleave="Img = myImage" @mouseover="Img = otherImage" alt="no_image_to_view"/>
+
+      <img :src="Img1" @mouseover="Img1 = otherImage1" @mouseleave="Img1 = myImage1" alt="no_image_to_view"/></div>
+
+
+  </div>
+
+  <footer>
+    <p>Author: Widmaer Fleuransaint<br>
+      <a href="mailto:widmaer09@gmail.com">widmaer09@gmail.com</a></p>
+
+  </footer>
+
+</main>
+
+</div>
+<script>
+
+  const {createApp} = Vue;
+
+  createApp({
+    data() {
+      return {
+
+
+        Img:'donut_1_10-08-2022.png',
+
+        myImage: 'donut_1_10-08-2022.png',
+        otherImage: 'DONUT2.png',
+
+        Img1: 'front1.png',
+
+
+        myImage1: 'front1.png',
+        otherImage1: 'back1.png',
+
+
+      }
+
+    }
+  }).mount('#app')
+
+
+</script>
+</body>
+</html>
